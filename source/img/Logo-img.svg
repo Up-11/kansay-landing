@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="303.17" height="303.17" viewBox="0 0 303.17 303.17">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #666;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x=".5" y=".5" width="302.17" height="302.17"/>
+  <g>
+    <polygon class="cls-3" points="71.17 41.92 71.17 264.84 124.14 211.86 173.51 261.24 232 202.75 183.97 154.72 233.66 105.03 174.47 45.84 124.78 95.53 71.17 41.92"/>
+    <polygon class="cls-1" points="80.91 66.29 80.91 137.7 116.14 102.47 80.91 66.29"/>
+    <polygon class="cls-1" points="84.2 153.38 124.3 193.48 164.51 153.27 123.45 112.22 84.2 153.38"/>
+    <polygon class="cls-1" points="80.91 165.99 80.91 240.36 117.12 204.16 80.91 165.99"/>
+    <polygon class="cls-1" points="180.82 166.04 180.82 240.36 217.38 203.81 180.82 166.04"/>
+    <polygon class="cls-1" points="180.82 67.77 180.82 139.93 217.14 103.61 180.82 67.77"/>
+    <polygon class="cls-1" points="170.92 64.91 170.92 139.93 132.96 101.97 170.92 64.91"/>
+    <polygon class="cls-1" points="133.78 203.18 170.92 166.04 170.92 240.36 133.78 203.18"/>
+  </g>
+</svg>
