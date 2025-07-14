@@ -195,7 +195,10 @@
 		</header>
 
 		<main id="top-page">
-			<section class="hero">
+			<section
+				class="hero"
+				style="background-image: url('source/img/hero-img.jpg')"
+			>
 				<div class="hero-content container mx-auto px-4 pt-25 md:pt-25">
 					<div class="flex flex-col gap-6 md:gap-10">
 						<h1
@@ -1387,9 +1390,11 @@
 			if (isOpen) {
 				mobileMenu.classList.remove('translate-y-0')
 				mobileMenu.classList.add('translate-y-full')
+				menuButton.classList.remove('text-[var(--color-blumine-950)]')
 			} else {
 				mobileMenu.classList.remove('translate-y-full')
 				mobileMenu.classList.add('translate-y-0')
+				menuButton.classList.add('text-[var(--color-blumine-950)]')
 			}
 		})
 
