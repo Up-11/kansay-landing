@@ -59,7 +59,7 @@ html {
 }
 
 .hero {
-	background-image: url('/source/img/hero-img.jpg');
+	background-image: url('source/img/hero-img.jpg');
 	background-repeat: no-repeat;
 	padding-bottom: 50px;
 	background-size: cover;
