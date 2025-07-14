@@ -60,8 +60,8 @@ html {
 
 .hero {
 	background-image: url('/source/img/hero-img.jpg');
-	min-height: 100dvh;
 	background-repeat: no-repeat;
+	padding-bottom: 50px;
 	background-size: cover;
 	position: relative;
 	color: var(--color-blumine-50);
@@ -100,4 +100,22 @@ html {
 .title {
 	font-weight: 600;
 	font-size: 36px;
+}
+.nav-link {
+	position: relative;
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: var(--color-blumine-400);
+	transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+	width: 100%;
 }

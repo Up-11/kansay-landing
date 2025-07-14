@@ -1,3 +1,72 @@
-[] - whatsapp
 [] - header sticky 
-[] - anchors 
+
+head
+
+<head>
+  <!-- Базовые мета-теги -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Основной заголовок и описание -->
+  <title>Санузел под ключ в Красноярске | KANSAY | Профессиональный ремонт</title>
+  <meta name="description" content="Профессиональный ремонт санузлов под ключ в Красноярске. Качественные материалы, гарантия на работы, индивидуальный подход. Закажите бесплатный замер!" />
+  
+  <!-- Ключевые слова (опционально) -->
+  <meta name="keywords" content="санузел под ключ, ремонт ванной, Красноярск, KANSAY, отделка санузла" />
+  
+  <!-- Каноническая ссылка -->
+  <link rel="canonical" href="https://вашсайт.ru" />
+  
+  <!-- Фавиконки -->
+  <link rel="shortcut icon" href="/source/img/Logo-img.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/source/img/apple-touch-icon.png">
+  
+  <!-- Социальные мета-теги (Open Graph) -->
+  <meta property="og:title" content="Санузел под ключ в Красноярске | KANSAY" />
+  <meta property="og:description" content="Профессиональный ремонт санузлов под ключ в Красноярске. Качественные материалы, гарантия на работы." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://вашсайт.ru" />
+  <meta property="og:image" content="https://вашсайт.ru/source/img/social-preview.jpg" />
+  <meta property="og:site_name" content="KANSAY" />
+  <meta property="og:locale" content="ru_RU" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Санузел под ключ в Красноярске | KANSAY">
+  <meta name="twitter:description" content="Профессиональный ремонт санузлов под ключ в Красноярске">
+  <meta name="twitter:image" content="https://вашсайт.ru/source/img/social-preview.jpg">
+  
+  <!-- Веб-манифест -->
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  <!-- Предзагрузка важных ресурсов -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" />
+  <link rel="preload" href="/source/css/style.css" as="style" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style" />
+  
+  <!-- CSS-ресурсы -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
+  <link rel="stylesheet" href="/source/css/style.css" />
+  
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- PhotoSwipe -->
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.3.0/dist/photoswipe.css" />
+  
+  <!-- Дополнительные мета-теги -->
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="KANSAY" />
+  <meta name="copyright" content="KANSAY" />
+  
+  <!-- Скрипты (можно добавить асинхронно) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>

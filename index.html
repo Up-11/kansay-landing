@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,125 +15,226 @@
 			href="/source/img/Logo-img.svg"
 			type="image/x-icon"
 		/>
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/photoswipe@5.3.0/dist/photoswipe.css"
+		/>
 	</head>
 	<body>
+		<header
+			class="fixed top-0 left-0 right-0 text-[var(--color-blumine-50)] px-4 py-4 z-50 transition-all duration-300 bg-transparent scroll-smooth"
+			id="pageHeader"
+		>
+			<div class="container mx-auto flex items-center justify-between">
+				<a href="#top-page" class="flex-shrink-0 z-50">
+					<img
+						src="/source/img/Logo.svg"
+						alt="KANSAY - Санузел под ключ в Красноярске"
+						width="150"
+						height="60"
+						class="h-12 w-auto"
+					/>
+				</a>
+
+				<nav class="hidden md:flex items-center space-x-8">
+					<a
+						href="#our-service"
+						class="nav-link hover:text-[var(--color-blumine-400)] transition-colors duration-200 font-medium"
+					>
+						Услуги
+					</a>
+					<a
+						href="#examp"
+						class="nav-link hover:text-[var(--color-blumine-400)] transition-colors duration-200 font-medium"
+					>
+						Наши работы
+					</a>
+					<a
+						href="#feedback"
+						class="nav-link hover:text-[var(--color-blumine-400)] transition-colors duration-200 font-medium"
+					>
+						Отзывы
+					</a>
+					<a
+						href="#contacts"
+						class="nav-link hover:text-[var(--color-blumine-400)] transition-colors duration-200 font-medium"
+					>
+						Контакты
+					</a>
+					<a
+						href="#port"
+						class="nav-link hover:text-[var(--color-blumine-400)] transition-colors duration-200 font-medium"
+					>
+						Портфолио
+					</a>
+				</nav>
+
+				<div class="flex items-center space-x-6">
+					<a
+						href="tel:+79834001211"
+						class="hidden md:flex items-center gap-2 hover:text-[var(--color-blumine-400)] transition-colors"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							class="flex-shrink-0"
+						>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M22 16.92v3a2 2 0 0 1-2.18 2a19.8 19.8 0 0 1-8.63-3.07a19.5 19.5 0 0 1-6-6a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.8 12.8 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45a12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92"
+							/>
+						</svg>
+						<span class="whitespace-nowrap">+7 (983) 400-12-11</span>
+					</a>
+
+					<a
+						href="https://api.whatsapp.com/send?phone=79835001211"
+						aria-label="WhatsApp"
+						class="hover:text-[var(--color-blumine-400)] transition-colors"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 256 258"
+						>
+							<path
+								fill="currentColor"
+								d="M128.534 0c34.098.017 66.102 13.29 90.167 37.383c24.066 24.092 37.312 56.12 37.299 90.174c-.028 69.579-56.076 126.318-125.36 127.446l-2.103.017h-.053c-21.005-.007-41.65-5.194-60.051-15.045l-.86-.466L0 257.233l18.083-66.055C6.93 171.852 1.061 149.922 1.07 127.455C1.098 57.178 58.279 0 128.534 0m.044 21.53c-58.437 0-105.964 47.523-105.987 105.936c-.008 19.712 5.424 38.921 15.719 55.612l.478.769l2.52 4.009l-10.703 39.093l40.097-10.517l3.869 2.294c16.007 9.499 34.32 14.599 53.017 14.764l.905.004h.044c58.392 0 105.918-47.526 105.942-105.943c.01-28.308-10.998-54.927-31.001-74.952s-46.603-31.06-74.9-31.07m-45.17 47.063c2.122 0 4.25.02 6.104.115c1.956.096 4.581-.743 7.165 5.466c.992 2.38 2.5 6.057 4.044 9.813l.331.805c2.485 6.045 4.969 12.072 5.447 13.029c.795 1.593 1.325 3.455.264 5.579c-1.06 2.127-1.593 3.454-3.184 5.316c-1.593 1.858-3.344 4.153-4.777 5.579l-.234.233l-.232.237c-1.42 1.469-2.608 3.153-.93 6.027c1.857 3.19 8.248 13.622 17.716 22.066c12.165 10.85 22.428 14.214 25.613 15.809s5.043 1.328 6.9-.8c1.859-2.124 7.961-9.298 10.085-12.487c2.123-3.188 4.246-2.655 7.166-1.593c1.387.505 5.654 2.511 10.092 4.649l1.38.666c4.443 2.15 8.776 4.288 10.29 5.046c3.185 1.595 5.309 2.392 6.104 3.719c.796 1.33.796 7.705-1.858 15.145s-15.378 14.23-21.497 15.146c-5.487.818-12.43 1.16-20.06-1.262c-4.624-1.47-10.558-3.429-18.157-6.71c-31.948-13.794-52.815-45.966-54.406-48.09l-.108-.144c-1.941-2.594-12.898-17.445-12.898-32.804c0-15.675 8.229-23.38 11.147-26.569c2.92-3.186 6.37-3.986 8.493-3.986"
+							/>
+						</svg>
+					</a>
+
+					<button
+						class="md:hidden z-50"
+						aria-label="Меню"
+						id="mobile-menu-button"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								d="M3 12h18M3 6h18M3 18h18"
+							/>
+						</svg>
+					</button>
+				</div>
+
+				<div
+					id="mobile-menu"
+					class="fixed inset-0 bg-white text-[var(--color-blumine-950)] z-40 flex flex-col items-center justify-center space-y-8 transform translate-y-full transition-transform duration-300 md:hidden"
+				>
+					<a
+						href="#our-service"
+						class="text-2xl font-medium hover:text-[var(--color-blumine-400)] menu-btn"
+						>Услуги</a
+					>
+					<a
+						href="#examp"
+						class="text-2xl font-medium hover:text-[var(--color-blumine-400)] menu-btn"
+						>Наши работы</a
+					>
+					<a
+						href="#feedback"
+						class="text-2xl font-medium hover:text-[var(--color-blumine-400)] menu-btn"
+						>Отзывы</a
+					>
+					<a
+						href="#contacts"
+						class="text-2xl font-medium hover:text-[var(--color-blumine-400)] menu-btn"
+						>Контакты</a
+					>
+					<a
+						href="#port"
+						class="text-2xl font-medium hover:text-[var(--color-blumine-400)] menu-btn"
+						>Портфолио</a
+					>
+
+					<a
+						href="tel:+79834001211"
+						class="mt-8 flex items-center gap-2 text-xl hover:text-[var(--color-blumine-400)]"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M22 16.92v3a2 2 0 0 1-2.18 2a19.8 19.8 0 0 1-8.63-3.07a19.5 19.5 0 0 1-6-6a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.8 12.8 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45a12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92"
+							/>
+						</svg>
+						+7 (983) 500-12-11
+					</a>
+				</div>
+			</div>
+		</header>
+
 		<main id="top-page">
 			<section class="hero">
-				<header
-					class="flex hero-content justify-between container mx-auto items-center p-8"
-				>
-					<a href="#top-page"
-						><img
-							src="/source/img/Logo.svg"
-							alt="logo"
-							width="600"
-							height="600"
-							class="w-50 mr-auto"
-					/></a>
-					<div class="flex-grow"></div>
-
-					<nav class="mx-auto">
-						<ul class="flex gap-2 font-medium">
-							<li>
-								<a href="#our-service" class="header-link transition-colors"
-									>Услуги</a
-								>
-							</li>
-							<li>
-								<a href="#examp" class="header-link transition-colors"
-									>Наши работы</a
-								>
-							</li>
-							<li>
-								<a href="#feedback" class="header-link transition-colors"
-									>Отзывы</a
-								>
-							</li>
-							<li>
-								<a href="#contacts" class="header-link transition-colors"
-									>Контакты</a
-								>
-							</li>
-							<li>
-								<a href="#port" class="header-link transition-colors"
-									>Портфолио</a
-								>
-							</li>
-						</ul>
-					</nav>
-					<div class="flex-grow"></div>
-
-					<div class="flex gap-3 items-center">
-						<a
-							href="tel:+79834001211"
-							class="flex items-center transition-colors gap-1 hover:text-[var(--color-blumine-400)] text-2xl"
+				<div class="hero-content container mx-auto px-4 pt-25 md:pt-25">
+					<div class="flex flex-col gap-6 md:gap-10">
+						<h1
+							class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-							>
-								<!-- Icon from Lucide by Lucide Contributors - https://github.com/lucide-icons/lucide/blob/main/LICENSE -->
-								<path
-									fill="none"
-									stroke="currentColor"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M22 16.92v3a2 2 0 0 1-2.18 2a19.8 19.8 0 0 1-8.63-3.07a19.5 19.5 0 0 1-6-6a19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72a12.8 12.8 0 0 0 .7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45a12.8 12.8 0 0 0 2.81.7A2 2 0 0 1 22 16.92"
-								/>
-							</svg>
-							+7 (983) 400 12 11
-						</a>
-						<a href="https://api.whatsapp.com/send?phone=79835001211">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24.76"
-								height="24"
-								viewBox="0 0 256 258"
-								class="hover:text-[var(--color-blumine-400)] transition-colors"
-							>
-								<!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt -->
-								<path
-									fill="currentColor"
-									d="M128.534 0c34.098.017 66.102 13.29 90.167 37.383c24.066 24.092 37.312 56.12 37.299 90.174c-.028 69.579-56.076 126.318-125.36 127.446l-2.103.017h-.053c-21.005-.007-41.65-5.194-60.051-15.045l-.86-.466L0 257.233l18.083-66.055C6.93 171.852 1.061 149.922 1.07 127.455C1.098 57.178 58.279 0 128.534 0m.044 21.53c-58.437 0-105.964 47.523-105.987 105.936c-.008 19.712 5.424 38.921 15.719 55.612l.478.769l2.52 4.009l-10.703 39.093l40.097-10.517l3.869 2.294c16.007 9.499 34.32 14.599 53.017 14.764l.905.004h.044c58.392 0 105.918-47.526 105.942-105.943c.01-28.308-10.998-54.927-31.001-74.952s-46.603-31.06-74.9-31.07m-45.17 47.063c2.122 0 4.25.02 6.104.115c1.956.096 4.581-.743 7.165 5.466c.992 2.38 2.5 6.057 4.044 9.813l.331.805c2.485 6.045 4.969 12.072 5.447 13.029c.795 1.593 1.325 3.455.264 5.579c-1.06 2.127-1.593 3.454-3.184 5.316c-1.593 1.858-3.344 4.153-4.777 5.579l-.234.233l-.232.237c-1.42 1.469-2.608 3.153-.93 6.027c1.857 3.19 8.248 13.622 17.716 22.066c12.165 10.85 22.428 14.214 25.613 15.809s5.043 1.328 6.9-.8c1.859-2.124 7.961-9.298 10.085-12.487c2.123-3.188 4.246-2.655 7.166-1.593c1.387.505 5.654 2.511 10.092 4.649l1.38.666c4.443 2.15 8.776 4.288 10.29 5.046c3.185 1.595 5.309 2.392 6.104 3.719c.796 1.33.796 7.705-1.858 15.145s-15.378 14.23-21.497 15.146c-5.487.818-12.43 1.16-20.06-1.262c-4.624-1.47-10.558-3.429-18.157-6.71c-31.948-13.794-52.815-45.966-54.406-48.09l-.108-.144c-1.941-2.594-12.898-17.445-12.898-32.804c0-15.675 8.229-23.38 11.147-26.569c2.92-3.186 6.37-3.986 8.493-3.986"
-								/></svg
-						></a>
-					</div>
-				</header>
-				<div class="hero-content mt-10 container mx-auto">
-					<div class="flex flex-col gap-10">
-						<h1 class="text-6xl">
-							Профессиональная укладка <br />
-							плитки с гарантией качества в <br />
+							Профессиональная укладка <br class="hidden sm:inline" />
+							плитки с гарантией качества в <br class="hidden sm:inline" />
 							Красноярске
 						</h1>
-						<a href="#contacts" class="btn">Связаться с нами</a>
+						<a href="#contacts" class="btn w-full sm:w-auto text-center"
+							>Связаться с нами</a
+						>
 					</div>
-					<div class="flex mt-20 w-full justify-evenly">
+					<div
+						class="flex flex-col sm:flex-row mt-10 md:mt-20 w-full gap-8 sm:gap-4 justify-between sm:justify-evenly"
+					>
 						<div class="flex flex-col items-center justify-center gap-2">
-							<img src="/source/img/rub.svg" alt="" />
-							<p class="font-medium text-lg max-w-[220px] text-center">
+							<img src="/source/img/rub.svg" alt="" class="w-12 h-12" />
+							<p
+								class="font-medium text-base sm:text-lg max-w-[220px] text-center"
+							>
 								Работаем без предоплаты, только за материалы
 							</p>
 						</div>
 
 						<div class="flex flex-col items-center justify-center gap-2">
-							<img src="/source/img/check.svg" alt="" />
-							<p class="font-medium text-lg max-w-[220px] text-center">
+							<img src="/source/img/check.svg" alt="" class="w-12 h-12" />
+							<p
+								class="font-medium text-base sm:text-lg max-w-[220px] text-center"
+							>
 								Гарантия на все виды работ до 3 лет
 							</p>
 						</div>
+
 						<div class="flex flex-col items-center justify-center gap-2">
-							<img src="/source/img/hand.svg" alt="" />
-							<p class="font-medium text-lg max-w-[220px] text-center">
+							<img src="/source/img/hand.svg" alt="" class="w-12 h-12" />
+							<p
+								class="font-medium text-base sm:text-lg max-w-[220px] text-center"
+							>
 								Оплата по завершению работ
 							</p>
 						</div>
@@ -146,11 +247,77 @@
 					class="grid gap-5 grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3"
 				>
 					<article
-						class="group bg-[var(--color-blumine-100)] max-w-90 h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
+						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
 					>
 						<div class="relative h-[330px] flex-shrink-0">
 							<img
-								src="/source/img/service-1.png"
+								src="/source/img/service-1.webp"
+								class="w-full h-full object-cover transition-transform"
+								alt="Укладка плитки на кухонный фартук"
+								loading="lazy"
+							/>
+						</div>
+						<div class="p-4 flex flex-col flex-grow justify-between">
+							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
+								Укладка плитки на стены
+							</h2>
+							<p
+								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
+							>
+								От 2200 руб./м²
+							</p>
+						</div>
+					</article>
+					<article
+						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
+					>
+						<div class="relative h-[330px] flex-shrink-0">
+							<img
+								src="/source/img/service-2.webp"
+								class="w-full h-full object-cover transition-transform"
+								alt="Укладка плитки на кухонный фартук"
+								loading="lazy"
+							/>
+						</div>
+						<div class="p-4 flex flex-col flex-grow justify-between">
+							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
+								Укладка плитки в ванной
+							</h2>
+							<p
+								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
+							>
+								От 2500 руб./м²
+							</p>
+						</div>
+					</article>
+					<article
+						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
+					>
+						<div class="relative h-[330px] flex-shrink-0">
+							<img
+								src="/source/img/service-3.webp"
+								class="w-full h-full object-cover transition-transform"
+								alt="Укладка плитки на кухонный фартук"
+								loading="lazy"
+							/>
+						</div>
+						<div class="p-4 flex flex-col flex-grow justify-between">
+							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
+								Укладка плитки на пол
+							</h2>
+							<p
+								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
+							>
+								От 2200 руб./м²
+							</p>
+						</div>
+					</article>
+					<article
+						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
+					>
+						<div class="relative h-[330px] flex-shrink-0">
+							<img
+								src="/source/img/service-4.webp"
 								class="w-full h-full object-cover transition-transform"
 								alt="Укладка плитки на кухонный фартук"
 								loading="lazy"
@@ -172,7 +339,7 @@
 					>
 						<div class="relative h-[330px] flex-shrink-0">
 							<img
-								src="/source/img/work-imgs/img-1.1.jpg"
+								src="/source/img/service-5.webp"
 								class="w-full h-full object-cover transition-transform"
 								alt="Укладка плитки на кухонный фартук"
 								loading="lazy"
@@ -180,12 +347,12 @@
 						</div>
 						<div class="p-4 flex flex-col flex-grow justify-between">
 							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
-								Укладка плитки на кухонный фартук
+								Укладка крупноформатного керамогранита
 							</h2>
 							<p
 								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
 							>
-								От 3200 руб./м²
+								От 3500 руб./м²
 							</p>
 						</div>
 					</article>
@@ -194,7 +361,7 @@
 					>
 						<div class="relative h-[330px] flex-shrink-0">
 							<img
-								src="/source/img/work-imgs/img-1.1.jpg"
+								src="/source/img/service-6.webp"
 								class="w-full h-full object-cover transition-transform"
 								alt="Укладка плитки на кухонный фартук"
 								loading="lazy"
@@ -202,78 +369,12 @@
 						</div>
 						<div class="p-4 flex flex-col flex-grow justify-between">
 							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
-								Укладка плитки на кухонный фартук
+								Теплый пол
 							</h2>
 							<p
 								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
 							>
-								От 3200 руб./м²
-							</p>
-						</div>
-					</article>
-					<article
-						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
-					>
-						<div class="relative h-[330px] flex-shrink-0">
-							<img
-								src="/source/img/work-imgs/img-1.1.jpg"
-								class="w-full h-full object-cover transition-transform"
-								alt="Укладка плитки на кухонный фартук"
-								loading="lazy"
-							/>
-						</div>
-						<div class="p-4 flex flex-col flex-grow justify-between">
-							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
-								Укладка плитки на кухонный фартук
-							</h2>
-							<p
-								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
-							>
-								От 3200 руб./м²
-							</p>
-						</div>
-					</article>
-					<article
-						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
-					>
-						<div class="relative h-[330px] flex-shrink-0">
-							<img
-								src="/source/img/work-imgs/img-1.1.jpg"
-								class="w-full h-full object-cover transition-transform"
-								alt="Укладка плитки на кухонный фартук"
-								loading="lazy"
-							/>
-						</div>
-						<div class="p-4 flex flex-col flex-grow justify-between">
-							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
-								Укладка плитки на кухонный фартук
-							</h2>
-							<p
-								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
-							>
-								От 3200 руб./м²
-							</p>
-						</div>
-					</article>
-					<article
-						class="group bg-[var(--color-blumine-100)] h-full min-h-[330px] border border-[var(--color-blumine-400)] flex flex-col rounded-lg overflow-hidden transition-all"
-					>
-						<div class="relative h-[330px] flex-shrink-0">
-							<img
-								src="/source/img/work-imgs/img-1.1.jpg"
-								class="w-full h-full object-cover transition-transform"
-								alt="Укладка плитки на кухонный фартук"
-								loading="lazy"
-							/>
-						</div>
-						<div class="p-4 flex flex-col flex-grow justify-between">
-							<h2 class="font-semibold text-xl mb-2 line-clamp-2">
-								Укладка плитки на кухонный фартук
-							</h2>
-							<p
-								class="text-end font-medium text-lg text-[var(--color-blumine-700)]"
-							>
-								От 3200 руб./м²
+								От 1200 руб./м²
 							</p>
 						</div>
 					</article>
@@ -349,211 +450,252 @@
 					</div>
 				</div>
 			</section>
-			<section class="container mx-auto">
-				<h1 class="title my-5" id="examp">Примеры наших работ</h1>
-				<div class="flex flex-col gap-10">
-					<h1 class="title my-1 text-center">Примеры наших работ</h1>
-					<div class="flex items-start gap-5 max-w-4xl mx-auto p-4">
-						<div class="swiper w-1/2">
+			<section class="container mx-auto px-4">
+				<h1 class="title my-5 text-center md:text-left" id="examp">
+					Примеры наших работ
+				</h1>
+				<div class="flex flex-col gap-8 md:gap-10">
+					<div
+						class="flex flex-col lg:flex-row items-start gap-5 w-full max-w-4xl mx-auto p-4 bg-white/5 rounded-xl"
+					>
+						<div class="swiper w-full lg:w-1/2">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.1.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.2.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.3.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.4.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.5.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.6.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-1.7.jpg"
-										alt="Пример работы"
+										alt="Укладка плитки в ванной комнате"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
-						<div class="w-1/2 text-lg">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-							impedit nobis aspernatur.
+						<div class="w-full lg:w-1/2 text-base md:text-lg">
+							<h3 class="text-xl md:text-2xl font-bold mb-3">
+								Ремонт ванной комнаты
+							</h3>
+							<p class="mb-2"><strong>Выполненные работы:</strong></p>
+
+							<ul class="list-disc pl-5 space-y-1">
+								<li>Демонтаж старой плитки и стяжки</li>
+								<li>Гидроизоляция пола и стен</li>
+								<li>Выравнивание стен цементной смесью</li>
+								<li>Укладка керамогранитной плитки 60×60 см</li>
+								<li>Монтаж декоративного панно</li>
+								<li>Затирка швов эпоксидной затиркой</li>
+							</ul>
 						</div>
 					</div>
-					<h1 class="title my-1 text-center">Примеры наших работ</h1>
-					<div class="flex items-start gap-5 max-w-4xl mx-auto p-4">
-						<div class="swiper w-1/2">
+
+					<div
+						class="flex flex-col lg:flex-row items-start gap-5 w-full max-w-4xl mx-auto p-4 bg-white/5 rounded-xl"
+					>
+						<div class="swiper w-full lg:w-1/2">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.1.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.2.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.3.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.4.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.5.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.6.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.7.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-2.8.jpg"
-										alt="Пример работы"
+										alt="Плитка на кухонном фартуке"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
-						<div class="w-1/2 text-lg">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-							impedit nobis aspernatur.
+						<div class="w-full lg:w-1/2 text-base md:text-lg">
+							<h3 class="text-xl md:text-2xl font-bold mb-3">
+								Санузел с плиточным фартуком
+							</h3>
+							<p class="mb-2"><strong>Выполненные работы:</strong></p>
+							<ul class="list-disc pl-5 space-y-1">
+								<li>Подготовка поверхности стен (грунтовка)</li>
+								<li>Разметка и раскрой плитки</li>
+								<li>Укладка мозаичной плитки на фартук</li>
+								<li>Монтаж керамической плитки в рабочей зоне</li>
+								<li>Установка декоративных уголков</li>
+								<li>Герметизация стыков силиконом</li>
+							</ul>
 						</div>
 					</div>
-					<h1 class="title my-1 text-center">Примеры наших работ</h1>
-					<div class="flex items-start gap-5 max-w-4xl mx-auto p-4">
-						<div class="swiper w-1/2">
+
+					<div
+						class="flex flex-col lg:flex-row items-start gap-5 w-full max-w-4xl mx-auto p-4 bg-white/5 rounded-xl"
+					>
+						<div class="swiper w-full lg:w-1/2">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.1.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.2.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.3.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.4.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.5.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.6.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.7.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.8.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 								<div class="swiper-slide">
 									<img
 										src="/source/img/work-imgs/img-3.9.jpg"
-										alt="Пример работы"
+										alt="Терраса с плиточным покрытием"
 										class="h-full max-h-130 object-cover rounded-lg"
 									/>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
-						<div class="w-1/2 text-lg">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-							impedit nobis aspernatur.
+						<div class="w-full lg:w-1/2 text-base md:text-lg">
+							<h3 class="text-xl md:text-2xl font-bold mb-3">
+								Отделка санузла
+							</h3>
+							<p class="mb-2"><strong>Выполненные работы:</strong></p>
+							<ul class="list-disc pl-5 space-y-1">
+								<li>Демонтаж старых покрытий</li>
+								<li>Гидроизоляция пола и стен</li>
+								<li>Укладка керамической плитки 30×60 см</li>
+								<li>Монтаж подвесного потолка с влагостойкой отделкой</li>
+								<li>Установка сантехнического оборудования</li>
+								<li>Герметизация швов влагостойкой затиркой</li>
+							</ul>
+							<p class="mt-3 text-sm italic">
+								* Применены влагостойкие материалы и антискользящая плитка
+							</p>
 						</div>
 					</div>
 				</div>
@@ -564,100 +706,126 @@
 					<div
 						class="bg-[var(--color-blumine-50)] rounded-lg p-6 max-w-4xl w-full"
 					>
-						<div class="flex flex-col md:flex-row items-center gap-10">
+						<div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
 							<div
-								class="size-56 rounded-full self-center overflow-hidden border-4 border-white shadow-lg"
+								class="size-40 md:size-56 rounded-full self-center overflow-hidden border-4 border-white shadow-lg"
 							>
 								<img
-									src="/source/img/work-imgs/img-1.1.jpg"
-									alt="Пример работы"
-									class="w-full h-full rounded-full"
+									src="/source/img/work-imgs/img-1.4.jpg"
+									alt="Фото клиента - Ольга"
+									class="w-full h-full object-cover rounded-full"
 								/>
 							</div>
 
-							<div class="text-center self-start md:text-left">
+							<div class="text-center self-start md:text-left flex-1">
 								<h3
-									class="font-bold text-3xl text-[var(--color-blumine-800)] mb-2"
+									class="font-bold text-2xl md:text-3xl text-[var(--color-blumine-800)] mb-2"
 								>
-									Адрес работы
+									Ольга, ул. Киренского
 								</h3>
-								<p class="text-[var(--color-blumine-600)] text-lg">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-									sed quisquam libero!
+								<div class="flex justify-center md:justify-start gap-1 mb-3">
+									★★★★★
+								</div>
+								<p class="text-[var(--color-blumine-600)] text-base md:text-lg">
+									"Заказывали укладку плитки в ванной. Сделали быстро и
+									качественно! Мастера аккуратные, убрали после себя. Особенно
+									порадовало, что предложили несколько вариантов раскладки и
+									помогли с выбором плитки. Рекомендую!"
+								</p>
+								<p class="text-sm text-[var(--color-blumine-400)] mt-3">
+									Работы выполнены: 15 мая 2024
 								</p>
 							</div>
 						</div>
 					</div>
+
 					<div
 						class="bg-[var(--color-blumine-50)] rounded-lg p-6 max-w-4xl w-full"
 					>
-						<div class="flex flex-col md:flex-row items-center gap-10">
+						<div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
 							<div
-								class="size-56 rounded-full self-center overflow-hidden border-4 border-white shadow-lg"
+								class="size-40 md:size-56 rounded-full overflow-hidden border-4 border-white shadow-lg self-center"
 							>
 								<img
-									src="/source/img/work-imgs/img-1.1.jpg"
-									alt="Пример работы"
-									class="w-full h-full rounded-full"
+									src="/source/img/work-imgs/img-2.7.jpg"
+									alt="Фото клиента - Игорь"
+									class="w-full h-full object-cover self-center"
 								/>
 							</div>
 
-							<div class="text-center self-start md:text-left">
+							<div class="text-center self-start md:text-left flex-1">
 								<h3
-									class="font-bold text-3xl text-[var(--color-blumine-800)] mb-2"
+									class="font-bold text-2xl md:text-3xl text-[var(--color-blumine-800)] mb-2"
 								>
-									Адрес работы
+									Игорь, мкрн. Солнечный
 								</h3>
-								<p class="text-[var(--color-blumine-600)] text-lg">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-									sed quisquam libero!
+								<div class="flex justify-center md:justify-start gap-1 mb-3">
+									★★★★★
+								</div>
+								<p class="text-[var(--color-blumine-600)] text-base md:text-lg">
+									"Делали плитку в санузле. Остался очень доволен! Цена
+									адекватная, сроки соблюли. Через год эксплуатации - ни одной
+									трещины, все ровно и красиво. Буду обращаться ещё для отделки
+									балкона."
+								</p>
+								<p class="text-sm text-[var(--color-blumine-400)] mt-3">
+									Работы выполнены: 3 апреля 2024
 								</p>
 							</div>
 						</div>
 					</div>
+
 					<div
 						class="bg-[var(--color-blumine-50)] rounded-lg p-6 max-w-4xl w-full"
 					>
-						<div class="flex flex-col md:flex-row items-center gap-10">
+						<div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
 							<div
-								class="size-56 rounded-full self-center overflow-hidden border-4 border-white shadow-lg"
+								class="size-40 md:size-56 rounded-full self-center overflow-hidden border-4 border-white shadow-lg"
 							>
 								<img
-									src="/source/img/work-imgs/img-1.1.jpg"
-									alt="Пример работы"
-									class="w-full h-full rounded-full"
+									src="/source/img/work-imgs/img-3.4.jpg"
+									alt="Фото клиента - Семья Петровых"
+									class="w-full h-full object-cover"
 								/>
 							</div>
 
-							<div class="text-center self-start md:text-left">
+							<div class="text-center self-start md:text-left flex-1">
 								<h3
-									class="font-bold text-3xl text-[var(--color-blumine-800)] mb-2"
+									class="font-bold text-2xl md:text-3xl text-[var(--color-blumine-800)] mb-2"
 								>
-									Адрес работы
+									ул. Маерчака
 								</h3>
-								<p class="text-[var(--color-blumine-600)] text-lg">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-									sed quisquam libero!
+								<div class="flex justify-center md:justify-start gap-1 mb-3">
+									★★★★☆
+								</div>
+								<p class="text-[var(--color-blumine-600)] text-base md:text-lg">
+									"Делали ремонт в санузле. Качество работы на хорошем уровне. В
+									целом остались довольны - плитка лежит ровно, швы аккуратные.
+									Спасибо за терпение к нашим многочисленным просьбам!"
+								</p>
+								<p class="text-sm text-[var(--color-blumine-400)] mt-3">
+									Работы выполнены: 22 марта 2024
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="mt-5 bg-[var(--color-blumine-50)]">
-				<div class="p-10 container mx-auto">
-					<h1 class="title my-5 text-center" id="contacts">Связаться с нами</h1>
+			<section class="py-10 mt-5 bg-[var(--color-blumine-50)]">
+				<div class="px-4 sm:px-6 lg:px-8 container mx-auto">
+					<h1 class="title mb-8 text-center" id="contacts">Связаться с нами</h1>
+
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto p-6"
+						class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto"
 					>
 						<a
-							href="tel:+79834001211"
-							class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow"
+							href="tel:+79835001211"
+							class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-lg sm:rounded-xl shadow-sm hover:shadow-md transition-all"
 						>
-							<div class="p-3 bg-blue-100 rounded-full">
+							<div class="p-2 sm:p-3 bg-blue-100 rounded-full">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-6 w-6 text-blue-600"
+									class="h-5 w-5 sm:h-6 sm:w-6 text-blue-600"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -671,19 +839,23 @@
 								</svg>
 							</div>
 							<div>
-								<p class="text-gray-500 text-sm">Телефон</p>
-								<p class="font-semibold text-lg">+7 (983) 400 12 11</p>
+								<p class="text-gray-500 text-xs sm:text-sm">Телефон</p>
+								<p class="font-semibold text-base sm:text-lg">
+									+7 (983) 500-12-11
+								</p>
 							</div>
 						</a>
 
 						<a
 							href="https://www.instagram.com/kansaysanuzel?utm_source=qr&igsh=N3Q1YzRwY2psZ3dq"
-							class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-lg sm:rounded-xl shadow-sm hover:shadow-md transition-all"
 						>
-							<div class="p-3 bg-pink-100 rounded-full">
+							<div class="p-2 sm:p-3 bg-pink-100 rounded-full">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-6 w-6 text-pink-600"
+									class="h-5 w-5 sm:h-6 sm:w-6 text-pink-600"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -697,24 +869,25 @@
 								</svg>
 							</div>
 							<div>
-								<p class="text-gray-500 text-sm">Instagram*</p>
-								<p class="font-semibold text-lg">@kansaysanuzel</p>
+								<p class="text-gray-500 text-xs sm:text-sm">Instagram*</p>
+								<p class="font-semibold text-base sm:text-lg">@kansaysanuzel</p>
 							</div>
 						</a>
 
 						<a
-							href="https://api.whatsapp.com/send?phone=79835001211"
-							class="flex items-center col-span-2 gap-4 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow"
+							href="https://api.whatsapp.com/send?phone=79834001211"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex items-center col-span-1 md:col-span-2 gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-lg sm:rounded-xl shadow-sm hover:shadow-md transition-all"
 						>
-							<div class="p-3 bg-green-100 rounded-full">
+							<div class="p-2 sm:p-3 bg-green-100 rounded-full">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									width="24.76"
-									height="24"
+									width="20"
+									height="20"
 									viewBox="0 0 256 258"
-									class="text-green-600 transition-colors"
+									class="text-green-600"
 								>
-									<!-- Icon from SVG Logos by Gil Barbara - https://raw.githubusercontent.com/gilbarbara/logos/master/LICENSE.txt -->
 									<path
 										fill="currentColor"
 										d="M128.534 0c34.098.017 66.102 13.29 90.167 37.383c24.066 24.092 37.312 56.12 37.299 90.174c-.028 69.579-56.076 126.318-125.36 127.446l-2.103.017h-.053c-21.005-.007-41.65-5.194-60.051-15.045l-.86-.466L0 257.233l18.083-66.055C6.93 171.852 1.061 149.922 1.07 127.455C1.098 57.178 58.279 0 128.534 0m.044 21.53c-58.437 0-105.964 47.523-105.987 105.936c-.008 19.712 5.424 38.921 15.719 55.612l.478.769l2.52 4.009l-10.703 39.093l40.097-10.517l3.869 2.294c16.007 9.499 34.32 14.599 53.017 14.764l.905.004h.044c58.392 0 105.918-47.526 105.942-105.943c.01-28.308-10.998-54.927-31.001-74.952s-46.603-31.06-74.9-31.07m-45.17 47.063c2.122 0 4.25.02 6.104.115c1.956.096 4.581-.743 7.165 5.466c.992 2.38 2.5 6.057 4.044 9.813l.331.805c2.485 6.045 4.969 12.072 5.447 13.029c.795 1.593 1.325 3.455.264 5.579c-1.06 2.127-1.593 3.454-3.184 5.316c-1.593 1.858-3.344 4.153-4.777 5.579l-.234.233l-.232.237c-1.42 1.469-2.608 3.153-.93 6.027c1.857 3.19 8.248 13.622 17.716 22.066c12.165 10.85 22.428 14.214 25.613 15.809s5.043 1.328 6.9-.8c1.859-2.124 7.961-9.298 10.085-12.487c2.123-3.188 4.246-2.655 7.166-1.593c1.387.505 5.654 2.511 10.092 4.649l1.38.666c4.443 2.15 8.776 4.288 10.29 5.046c3.185 1.595 5.309 2.392 6.104 3.719c.796 1.33.796 7.705-1.858 15.145s-15.378 14.23-21.497 15.146c-5.487.818-12.43 1.16-20.06-1.262c-4.624-1.47-10.558-3.429-18.157-6.71c-31.948-13.794-52.815-45.966-54.406-48.09l-.108-.144c-1.941-2.594-12.898-17.445-12.898-32.804c0-15.675 8.229-23.38 11.147-26.569c2.92-3.186 6.37-3.986 8.493-3.986"
@@ -722,17 +895,456 @@
 								</svg>
 							</div>
 							<div>
-								<p class="text-gray-500 text-sm">WhatsApp</p>
-								<p class="font-semibold text-lg">+7 (983) 400 12 11</p>
+								<p class="text-gray-500 text-xs sm:text-sm">WhatsApp</p>
+								<p class="font-semibold text-base sm:text-lg">
+									+7 (983) 500-12-11
+								</p>
 							</div>
 						</a>
 					</div>
 				</div>
 			</section>
+			<section class="mt-5">
+				<div class="p-10 container mx-auto">
+					<h1 class="title my-5" id="port">Портфолио</h1>
+					<div
+						id="my-gallery"
+						class="grid grid-cols-4 gap-4 justify-center items-center justify-items-center"
+					>
+						<a
+							href="/source/img/work-imgs/img-1.1.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+							data-cropped="true"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.1.jpg"
+								alt="Описание изображения 1"
+								width="300"
+								height="600"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+
+						<a
+							href="/source/img/work-imgs/img-1.2.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.2.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-1.3.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+							data-cropped="true"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.3.jpg"
+								alt="Описание изображения 1"
+								width="300"
+								height="600"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+
+						<a
+							href="/source/img/work-imgs/img-1.4.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.4.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-1.5.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.5.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-1.6.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.6.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-1.7.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-1.7.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.1.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.1.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.2.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.2.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.3.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.3.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.4.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.4.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.5.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.5.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.6.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.6.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.7.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.7.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.7.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-2.8.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-2.8.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.1.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.1.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.1.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.2.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.2.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.3.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.3.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.4.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.4.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.5.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.5.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.6.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.6.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.7.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.7.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.8.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.8.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+						<a
+							href="/source/img/work-imgs/img-3.9.jpg"
+							data-pswp-width="600"
+							data-pswp-height="900"
+						>
+							<img
+								src="/source/img/work-imgs/img-3.9.jpg"
+								width="300"
+								height="600"
+								alt="Описание изображения 2"
+								class="object-cover rounded-lg shadow-md hover:opacity-90 transition-opacity"
+								loading="lazy"
+							/>
+						</a>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
+		<footer
+			class="bg-[var(--color-blumine-950)] text-[var(--color-blumine-50)] py-8 px-4 w-full"
+		>
+			<div class="max-w-6xl mx-auto flex flex-col gap-6">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div>
+						<h3 class="text-xl font-semibold mb-4">KANSAY</h3>
+						<p class="opacity-90">Санузел под ключ в Красноярске</p>
+					</div>
+
+					<div>
+						<h3 class="text-xl font-semibold mb-4">Контакты</h3>
+						<address class="not-italic">
+							<p class="opacity-90">г. Красноярск</p>
+							<p class="opacity-90">+7 (984) 500-12-11</p>
+						</address>
+					</div>
+
+					<div>
+						<h3 class="text-xl font-semibold mb-4">Информация</h3>
+						<p class="text-sm opacity-80">
+							На сайте используются изображения с сервиса
+							<a href="https://www.freepik.com/" target="_blank">Freepik</a>
+						</p>
+						<p class="text-sm opacity-80 mt-2">
+							Хостинг-провайдер —
+							<a href="https://beget.com/ru/hosting/virtual" target="_blank"
+								>Beget</a
+							>
+						</p>
+					</div>
+				</div>
+
+				<div class="border-t border-[var(--color-blumine-800)] my-4"></div>
+
+				<div
+					class="flex flex-col md:flex-row justify-between items-center gap-4"
+				>
+					<p class="text-sm opacity-80">
+						Copyright © 2025 KANSAY. Все права защищены
+					</p>
+
+					<p class="text-xs opacity-70 text-center">
+						Instagram*, продукт компании Meta, которая признана экстремистской
+						организацией в России
+					</p>
+
+					<button
+						onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+						class="px-4 py-2 bg-[var(--color-blumine-800)] cursor-pointer hover:bg-[var(--color-blumine-700)] rounded-lg transition-colors"
+					>
+						Наверх ↑
+					</button>
+				</div>
+			</div>
+		</footer>
+		<script type="module">
+			document.addEventListener('DOMContentLoaded', () => {
+				import(
+					'https://unpkg.com/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js'
+				).then(({ default: PhotoSwipeLightbox }) => {
+					const lightbox = new PhotoSwipeLightbox({
+						gallery: '#my-gallery',
+						children: 'a',
+						pswpModule: () =>
+							import(
+								'https://unpkg.com/photoswipe@5.3.0/dist/photoswipe.esm.js'
+							),
+					})
+					lightbox.init()
+				})
+			})
+		</script>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			new Swiper('.swiper', {
@@ -754,6 +1366,42 @@
 					el: '.swiper-scrollbar',
 				},
 			})
+		})
+	</script>
+
+	<script>
+		const menuButton = document.getElementById('mobile-menu-button')
+		const mobileMenu = document.getElementById('mobile-menu')
+		const mobileMenuItems = document.querySelectorAll('#mobile-menu a')
+
+		mobileMenuItems.forEach(item => {
+			item.addEventListener('click', () => {
+				mobileMenu.classList.remove('translate-y-0')
+				mobileMenu.classList.add('translate-y-full')
+			})
+		})
+
+		menuButton.addEventListener('click', () => {
+			const isOpen = mobileMenu.classList.contains('translate-y-0')
+
+			if (isOpen) {
+				mobileMenu.classList.remove('translate-y-0')
+				mobileMenu.classList.add('translate-y-full')
+			} else {
+				mobileMenu.classList.remove('translate-y-full')
+				mobileMenu.classList.add('translate-y-0')
+			}
+		})
+
+		window.addEventListener('scroll', function () {
+			const header = document.getElementById('pageHeader')
+			if (window.scrollY > 50) {
+				header.classList.add('bg-[var(--color-blumine-950)]')
+				header.classList.remove('bg-transparent')
+			} else {
+				header.classList.remove('bg-[var(--color-blumine-950)]')
+				header.classList.add('bg-transparent')
+			}
 		})
 	</script>
 </html>
