@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kansaysanuzel124.ru/sitemap.xml
